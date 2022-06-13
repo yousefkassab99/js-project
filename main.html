@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap" rel="stylesheet">
+    <title>Rock->Paper->Scissors</title>
+  </head>
+  <body>
+    <div class="wrapper">
+
+          <div class="score">
+              <p>SCORE</p>
+              <h1> 0 </h1>
+         
+      </div>
+      <div class="hands">
+            <div class="hand paper">
+              <img src="/images/paper.png" id="p"  onclick="pickUser('paper')"/>
+            </div>
+            <div class="hand scissors">
+              <img src="/images/scissors.png" id="s" onclick="pickUser('scissors')"/>
+            </div>
+            <div class="hand rock">
+              <img src="/images/rock.png" id="r" onclick="pickUser('rock')"/>                        
+            </div>
+      </div>
+      <div class="contest">       
+        <div class="user">
+            <h1>YOU PICKED</h1>
+            <div class="handImage">
+              <img id="userPickImage" src="/images/paper.png">
+            </div>
+        </div>
+        <div class="result"> 
+            <div class="decision"><h1> CONGRATULATIONS YOU WIN! </h1></div>
+            <div class="newGame" onclick="restart()">PLAY AGAIN</div>
+        </div>
+        <div class="computerhand">
+            <h1>THE PC PICKED</h1>
+            <div class="handImage">
+              <img id="computerPickImage" src='/images/paper.png' /> 
+            </div>   
+        </div>       
+      </div>        
+    </div>
+    <script src="/js/index.js"></script>
+  </body>
+</html>
